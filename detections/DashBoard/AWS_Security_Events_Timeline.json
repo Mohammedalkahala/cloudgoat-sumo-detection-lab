@@ -1,0 +1,62 @@
+{
+  "panelType": "SumoSearchPanel",
+  "title": "AWS Security Events Timeline",
+  "queries": [
+    {
+      "type": "LogsQuery",
+      "queryType": "Logs",
+      "queryKey": "A",
+      "queryString": "_sourceCategory=aws/cloudtrail\n| json \"eventTime\", \"eventName\"\n| where eventName in (\"AttachUserPolicy\", \"CreateFunction20150331\", \"AssumeRole\")\n| timeslice 5m\n| count by _timeslice, eventName\n| transpose row _timeslice column eventName",
+      "parseMode": "Auto",
+      "timeSource": "Message"
+    }
+  ],
+  "description": "",
+  "visualSettings": {
+    "general": {
+      "mode": "timeSeries",
+      "type": "line",
+      "displayType": "default",
+      "roundDataPoints": true,
+      "markerSize": 5,
+      "lineDashType": "solid",
+      "markerType": "none",
+      "lineThickness": 1
+    },
+    "title": {
+      "fontSize": 14
+    },
+    "axes": {
+      "axisX": {
+        "titleFontSize": 12,
+        "labelFontSize": 12
+      },
+      "axisY": {
+        "titleFontSize": 12,
+        "labelFontSize": 12,
+        "logarithmic": false
+      }
+    },
+    "legend": {
+      "enabled": true,
+      "verticalAlign": "bottom",
+      "fontSize": 12,
+      "maxHeight": 50,
+      "showAsTable": false,
+      "wrap": true
+    },
+    "color": {
+      "family": "Categorical Default"
+    },
+    "series": {},
+    "overrides": []
+  },
+  "keepVisualSettingsConsistentWithParent": true,
+  "layout": {
+    "layoutStructures": []
+  },
+  "queryEditorTab": "chart",
+  "coloringRules": null,
+  "linkedDashboards": [],
+  "sessionId": "2379077BEB5FA56C"
+}
