@@ -1,2 +1,2 @@
-<ALB_DNS>
+g-lb-<redacted>.us-east-1.elb.amazonaws.com
 
