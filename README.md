@@ -1,5 +1,7 @@
 # cloudgoat-sumo-detection-lab
 A project that provides a full walkthrough, artifacts, and detection content for a security monitoring lab. It uses a vulnerable AWS CloudGoat environment to simulate attacks and leverages Sumo Logic to detect the malicious activity.
+
+
 **Author:** Mohammed Alkahala  
 **Summary:** End-to-end demo: deployed CloudGoat scenarios in AWS (rce_web_app, lambda_privesc), executed attack chains, and built Sumo Logic searches, dashboards and monitors to detect and alert on the activity.
 
