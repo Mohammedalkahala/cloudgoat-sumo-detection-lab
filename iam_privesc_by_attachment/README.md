@@ -1,6 +1,9 @@
-## ✅ CloudGoat IAM Privilege Escalation Lab – 
+- ## ✅ CloudGoat IAM Privilege Escalation Lab –
++ ## ✅ IAM Privilege Escalation Lab (CloudGoat Scenario)
 
-### 📌 Lab: `iam_privesc_by_attachment`
+- Simulate an attacker escalating privileges on AWS by abusing misconfigured IAM permissions.
++ This project simulates IAM privilege escalation on AWS using the CloudGoat `iam_privesc_by_attachment` scenario.
+
 
 ---
 
