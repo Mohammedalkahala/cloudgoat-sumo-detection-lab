@@ -1,0 +1,58 @@
+{
+  "panelType": "SumoSearchPanel",
+  "title": "Top Users Attaching IAM Policies",
+  "queries": [
+    {
+      "type": "LogsQuery",
+      "queryType": "Logs",
+      "queryKey": "A",
+      "queryString": "_sourceCategory=aws/cloudtrail \"AttachUserPolicy\"\n| json field=_raw \"userIdentity.userName\" as user\n| json field=_raw \"requestParameters.policyArn\" as policy\n| count by user, policy\n| sort by _count desc\n",
+      "parseMode": "Auto",
+      "timeSource": "Message"
+    }
+  ],
+  "description": "",
+  "visualSettings": {
+    "title": {
+      "fontSize": 14
+    },
+    "legend": {
+      "enabled": true,
+      "verticalAlign": "bottom",
+      "fontSize": 12,
+      "maxHeight": 50,
+      "showAsTable": false,
+      "wrap": true
+    },
+    "axes": {
+      "axisX": {
+        "titleFontSize": 12,
+        "labelFontSize": 12
+      },
+      "axisY": {
+        "titleFontSize": 12,
+        "labelFontSize": 12
+      }
+    },
+    "series": {},
+    "general": {
+      "type": "bar",
+      "displayType": "default",
+      "roundDataPoints": true,
+      "fillOpacity": 1,
+      "mode": "distribution"
+    },
+    "color": {
+      "family": "SET1"
+    }
+  },
+  "keepVisualSettingsConsistentWithParent": true,
+  "layout": {
+    "layoutStructures": []
+  },
+  "queryEditorTab": "chart",
+  "explanationMessage": "sharedAnalytics.renderTypes.distribution.explanation",
+  "icon": "pie-chart-brand",
+  "label": "sharedAnalytics.renderTypes.distribution.label",
+  "pristineMessage": "sharedAnalytics.emptyVisualization.distribution"
+}
