@@ -3,7 +3,7 @@ A project that provides a full walkthrough, artifacts, and detection content for
 
 
 **Author:** Mohammed Alkahala  
-**Summary:** End-to-end demo: deployed CloudGoat scenarios in AWS (rce_web_app, lambda_privesc), executed attack chains, and built Sumo Logic searches, dashboards and monitors to detect and alert on the activity.
+**Summary:** Deployed CloudGoat **rce_web_app** in AWS, executed the attack chain, and built Sumo Logic searches/dashboards/monitors to detect the activity.
 
 **Demo artifacts included**
 - Terraform troubleshooting notes & example var file: `setup/`
