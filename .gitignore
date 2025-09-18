@@ -1,0 +1,18 @@
+# ===== Safety / secrets / temp =====
+*_raw.*
+*.har
+*.pcap
+*.log
+.env
+tmp/
+
+# ===== Terraform state / cache =====
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# ===== OS cruft =====
+.DS_Store
+Thumbs.db
+EOF
