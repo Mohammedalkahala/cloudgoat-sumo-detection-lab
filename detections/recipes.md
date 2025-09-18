@@ -19,8 +19,8 @@ _sourceCategory=aws/cloudtrail
 | where !sourceIPAddress matches "10.*"  // example internal IP filter
 | count by userIdentity.arn, sourceIPAddress
 | where _count > 2
+```
 
----
 
 ## 📘 Detection: High-Frequency AssumeRole Usage
 
