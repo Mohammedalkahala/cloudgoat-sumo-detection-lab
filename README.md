@@ -16,6 +16,3 @@
 | [Detection Recipes](docs/detections/recipes.md)              | Explanation of queries, logic, tuning, and caveats        |
 | [Cleanup & Cost Controls](docs/cleanup_and_costs.md)         | How to teardown AWS safely and avoid \$ surprises         |
 
-High Confidence Detections
-
-AssumeRole Volume Abuse
