@@ -1,17 +1,23 @@
 {
   "panelType": "SumoSearchPanel",
-  "title": "Top Users Attaching IAM Policies",
+  "title": "who created keys for whom",
   "queries": [
     {
       "type": "LogsQuery",
       "queryType": "Logs",
       "queryKey": "A",
-      "queryString": "_sourceCategory=aws/cloudtrail \"AttachUserPolicy\"\n| json field=_raw \"userIdentity.userName\" as user\n| json field=_raw \"requestParameters.policyArn\" as policy\n| count by user, policy\n| sort by _count desc\n",
+      "queryString": "_sourceCategory=aws/cloudtrail \"CreateAccessKey\"\n| json field=_raw \"userIdentity.userName\" as user\n| json field=_raw \"requestParameters.userName\" as targetUser\n| count by user, targetUser\n",
       "parseMode": "Auto",
       "timeSource": "Message"
     }
   ],
   "description": "",
+  "timeRange": [
+    {
+      "t": "relative",
+      "d": -21600000
+    }
+  ],
   "visualSettings": {
     "title": {
       "fontSize": 14
@@ -42,17 +48,13 @@
       "fillOpacity": 1,
       "mode": "distribution"
     },
-    "color": {
-      "family": "SET1"
-    }
+    "overrides": []
   },
   "keepVisualSettingsConsistentWithParent": true,
   "layout": {
     "layoutStructures": []
   },
   "queryEditorTab": "chart",
-  "explanationMessage": "sharedAnalytics.renderTypes.distribution.explanation",
-  "icon": "pie-chart-brand",
-  "label": "sharedAnalytics.renderTypes.distribution.label",
-  "pristineMessage": "sharedAnalytics.emptyVisualization.distribution"
+  "coloringRules": null,
+  "linkedDashboards": []
 }
