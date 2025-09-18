@@ -1,4 +1,13 @@
 ```bash
+> CloudShell tip: Use `~/environment` instead of `/tmp` or you’ll lose state on disconnect.
+mkdir -p ~/environment && cd ~/environment
+
+# Terraform (no sudo)
+TF_VERSION=1.6.6
+curl -fsSL "https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${TF_VERSION}_linux_amd64.zip" -o /tmp/terraform.zip
+mkdir -p ~/.local/bin && unzip -o /tmp/terraform.zip -d ~/.local/bin && chmod +x ~/.local/bin/terraform
+export PATH="$HOME/.local/bin:$PATH" && echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+terraform -version
 # set variables
 export CGID="cglab4"
 export YOUR_IP="$(curl -s https://checkip.amazonaws.com | tr -d '\n')"
