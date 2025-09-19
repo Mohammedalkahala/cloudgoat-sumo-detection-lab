@@ -1,16 +1,16 @@
-## ✅ RCE Web App Lab (CloudGoat Scenario)
+## RCE Web App Lab (CloudGoat Scenario)
 
-### 📌 Scenario: rce_web_app
+### Scenario: rce_web_app
 
 ---
 
-### 🧠 Objective
+### Objective
 
 This lab simulates a Remote Code Execution (RCE) vulnerability on an AWS‑hosted web application via CloudGoat. The attacker exploits a vulnerable input field, obtains EC2 Instance Role / metadata credentials, and uses CloudTrail logs to detect these actions.
 
 ---
 
-### 🚀 Attack Narrative
+###  Attack Narrative
 
 1. **Deploy RCE Web App** scenario using CloudGoat.  
 2. **Locate the public web application** (via ALB or public endpoint).  
@@ -20,7 +20,7 @@ This lab simulates a Remote Code Execution (RCE) vulnerability on an AWS‑hoste
 
 ---
 
-### 🔐 Key Features & Exploits Used
+###  Key Features & Exploits Used
 
 | Feature                         | Purpose / Use                                            |
 |----------------------------------|----------------------------------------------------------|
@@ -30,7 +30,7 @@ This lab simulates a Remote Code Execution (RCE) vulnerability on an AWS‑hoste
 
 ---
 
-### 🕵️ Detection Content Provided
+### Detection Content Provided
 
 Here are the detections and artifacts included in this lab:
 
@@ -41,14 +41,14 @@ Here are the detections and artifacts included in this lab:
 
 ---
 
-### 📊 Dashboard Panels Included
+### Dashboard Panels Included
 
 - Metadata Access / Instance Role Usage  
 - Describe Instance Attribute (userData / metadata attributes)  
 
 ---
 
-### 🔒 Mitigation & Lessons
+### Mitigation & Lessons
 
 - Enforce IMDSv2 and disable IMDSv1 for EC2 instances  
 - Limit EC2 Instance Profile permissions to only what is needed  
@@ -57,7 +57,7 @@ Here are the detections and artifacts included in this lab:
 
 ---
 ```
-### 📁 Files in This Project
+### Files in This Project
 
 rce\_web\_app/
 ├── attacks/
