@@ -1,5 +1,3 @@
----
-
 ### ✅ `setup/cloudgoat_setup.md`
 
 ````md
