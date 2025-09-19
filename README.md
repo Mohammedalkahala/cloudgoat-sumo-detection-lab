@@ -19,14 +19,14 @@ Each lab directory contains:
 - `screenshots/` — Visual evidence of detections  
 - `README.md` — Lab‑specific instructions and narrative 
 
-## 🎯 Objectives
+##  Objectives
 
 - Simulate realistic AWS attacks in a controlled lab
 - Capture logs using CloudTrail, ELB, and S3 logging
 - Build detection queries and visual dashboards in Sumo Logic
 - Validate the end-to-end kill chain from exploit → exfiltration → alerting
 
-## 🛠 Setup Requirements
+## Setup Requirements
 
 - AWS account (tested in `us-east-1`)
 - CloudTrail enabled + log delivery to S3
