@@ -1,18 +1,20 @@
-## 🔍 Detection Engineer Resources
-📚 Documentation Index
+# CloudGoat Sumo Logic Detection Labs
 
-| Topic                                                        | Description                                               |
-| ------------------------------------------------------------ | --------------------------------------------------------- |
-| [Threat Model](docs/threat_model.md)                         | Defines attack scenarios, kill chain stages, and actors   |
-| [Logging Setup](docs/logging_setup.md)                       | AWS log sources, ingestion assumptions, parsing info      |
-| [Detection Metrics](docs/detection_metrics.md)               | Latency, false positive/negative expectations             |
-| [Environment Setup](docs/environment_setup.md)               | Safe deployment, isolation, permissions, cost estimates   |
-| [Versioning & Dependencies](docs/versioning_dependencies.md) | Toolchain versions and compatibility notes                |
-| [Operationalization Guide](docs/operationalization.md)       | How to use detections in prod, tune alerts, triage events |
-| [Testing & Validation](docs/testing_validation.md)           | Steps to confirm detections fire as expected              |
-| [Detections vs. Findings](docs/detections_vs_findings.md)    | Clarifies what’s alert-worthy vs. hunting context         |
-| [MITRE Coverage](docs/mitre_coverage.md)                     | Mapping of scenarios to ATT\&CK techniques                |
-| [Architecture Diagram](docs/logging_architecture.md)         | Visual of AWS → Sumo Logic detection pipeline             |
-| [Detection Recipes](docs/detections/recipes.md)              | Explanation of queries, logic, tuning, and caveats        |
-| [Cleanup & Cost Controls](docs/cleanup_and_costs.md)         | How to teardown AWS safely and avoid \$ surprises         |
+This repository contains two complete labs built with AWS CloudGoat to demonstrate attack‑to‑detection workflows using Sumo Logic.
 
+## Included Labs
+
+| Lab | Purpose |
+|---|---------|
+| `iam_privesc_by_attachment` | Demonstrates IAM privilege escalation via AttachUserPolicy & CreateAccessKey. |
+| `rce_web_app` | Demonstrates Remote Code Execution and EC2 exploitation in a web app. |
+
+## Contents of Each Lab
+
+Each lab directory contains:
+
+- `dashboards/` — JSON exports of dashboards showing detection panels  
+- `queries/` — Working detection queries  
+- `logs/` — Sample raw CloudTrail logs supporting detections  
+- `screenshots/` — Visual evidence of detections  
+- `README.md` — Lab‑specific instructions and narrative 
