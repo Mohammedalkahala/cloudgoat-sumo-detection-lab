@@ -1,6 +1,3 @@
-### ✅ `setup/cloudgoat_setup.md`
-
-
 # ☁️ CloudGoat Setup Guide
 
 This guide covers the exact steps used to deploy **CloudGoat scenarios** (`iam_privesc_by_attachment`, `rce_web_app`) and connect them to **Sumo Logic** for detection analysis.
