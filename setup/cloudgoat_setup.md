@@ -10,8 +10,6 @@ This guide covers the exact steps used to deploy **CloudGoat scenarios** (`iam_p
 
 - An AWS account with admin access
 - AWS CLI configured (`aws configure`)
-- Sumo Logic set up with AWS CloudTrail ingest (optional)
-- [Terraform](https://developer.hashicorp.com/terraform/downloads) installed
 
 
 
