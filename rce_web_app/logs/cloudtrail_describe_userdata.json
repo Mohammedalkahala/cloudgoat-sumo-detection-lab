@@ -1,0 +1,33 @@
+{
+  "eventVersion": "1.10",
+  "userIdentity": {
+    "type": "IAMUser",
+    "principalId": "AIDAU55B56T7GPFYKSTMC",
+    "arn": "arn:aws:iam::339105150206:user/admin",
+    "accountId": "339105150206",
+    "accessKeyId": "ASIAU55B56T7L4BOOZQL",
+    "userName": "admin",
+    "sessionContext": {
+      "attributes": {
+        "creationDate": "2025-09-17T19:19:19Z",
+        "mfaAuthenticated": "true"
+      }
+    }
+  },
+  "eventTime": "2025-09-17T21:57:42Z",
+  "eventSource": "ec2.amazonaws.com",
+  "eventName": "DescribeInstanceAttribute",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "3.134.244.221",
+  "userAgent": "Terraform",
+  "requestParameters": {
+    "instanceId": "i-00c24abd77fccf938",
+    "attribute": "userData"
+  },
+  "eventID": "acb03e81-b0d7-4d8c-b408-3a7223d7f716",
+  "readOnly": true,
+  "eventType": "AwsApiCall",
+  "managementEvent": true,
+  "recipientAccountId": "339105150206",
+  "eventCategory": "Management"
+}
