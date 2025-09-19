@@ -56,7 +56,7 @@ Here are the detections and artifacts included in this lab:
 - Monitor CloudTrail for unusual instance metadata access and attribute description activity  
 
 ---
-
+```
 ### 📁 Files in This Project
 
 rce\_web\_app/
@@ -68,5 +68,5 @@ rce\_web\_app/
 ├── queries/
 ├── screenshots/
 └── README.md
-
+```
 ---
