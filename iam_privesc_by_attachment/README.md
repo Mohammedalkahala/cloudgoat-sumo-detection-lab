@@ -1,16 +1,16 @@
-## ✅ IAM Privilege Escalation Lab (CloudGoat Scenario)
+##  IAM Privilege Escalation Lab (CloudGoat Scenario)
 
-### 📌 Scenario: `iam_privesc_by_attachment`
+###  Scenario: `iam_privesc_by_attachment`
 
 ---
 
-### 🧠 Objective
+###  Objective
 
 This project simulates IAM privilege escalation on AWS using the CloudGoat `iam_privesc_by_attachment` scenario. The attacker compromises an EC2 instance and uses `iam:AttachUserPolicy` and `iam:CreateAccessKey` to gain full administrative access.
 
 ---
 
-### 🚀 Attack Narrative
+###  Attack Narrative
 
 1. **Initial Access**: Attacker gains access to an EC2 instance (meek user).
 2. **Enumerates IAM Permissions**: Discovers permission to attach IAM policies to own user.
@@ -20,7 +20,7 @@ This project simulates IAM privilege escalation on AWS using the CloudGoat `iam_
 
 ---
 
-### 🔐 Key IAM Actions Exploited
+###  Key IAM Actions Exploited
 
 | Action                 | Description                                  |
 | ---------------------- | -------------------------------------------- |
@@ -29,9 +29,9 @@ This project simulates IAM privilege escalation on AWS using the CloudGoat `iam_
 
 ---
 
-### 🕵️ Sumo Logic Detection Queries
+###  Sumo Logic Detection Queries
 
-#### ✅ 1. Detect IAM Privilege Escalation via `AttachUserPolicy`
+####  1. Detect IAM Privilege Escalation via `AttachUserPolicy`
 
 ```sql
 _sourceCategory=aws/cloudtrail "AttachUserPolicy"
@@ -41,7 +41,7 @@ _sourceCategory=aws/cloudtrail "AttachUserPolicy"
 | count by user, policy
 ```
 
-#### ✅ 2. Detect Access Key Creation via `CreateAccessKey`
+####  2. Detect Access Key Creation via `CreateAccessKey`
 
 ```sql
 _sourceCategory=aws/cloudtrail "CreateAccessKey"
@@ -51,7 +51,7 @@ _sourceCategory=aws/cloudtrail "CreateAccessKey"
 | count by time, user, targetUser
 ```
 
-#### 🔍 3. (Optional) Detect EC2 Instances Launching with IAM Roles
+####  3. (Optional) Detect EC2 Instances Launching with IAM Roles
 
 ```sql
 _sourceCategory=aws/cloudtrail "RunInstances"
@@ -62,7 +62,7 @@ _sourceCategory=aws/cloudtrail "RunInstances"
 
 ---
 
-### 📊 Dashboard Panels
+###  Dashboard Panels
 
 * **Attach Admin Policy Detection** — Bar chart or table
 * **Access Key Creation Events** — Timeline view
@@ -70,7 +70,7 @@ _sourceCategory=aws/cloudtrail "RunInstances"
 
 ---
 
-### 🔒 Mitigation
+###  Mitigation
 
 * Enforce **least privilege** for all IAM roles/users.
 * Enable **CloudTrail logging** across all regions.
@@ -79,7 +79,7 @@ _sourceCategory=aws/cloudtrail "RunInstances"
 
 ---
 
-### 📁 Files in This Project
+###  Files in This Project
 
 ```
 .
@@ -97,22 +97,11 @@ _sourceCategory=aws/cloudtrail "RunInstances"
 
 ---
 
-### 📝 Notes
+###  Notes
 
 * CloudGoat IAM user: `kerrigan`
 * Initial EC2 role: `cg-ec2-meek-role-cglab4`
 * Escalated policy: `AdministratorAccess`
 * New access key created for full privilege access
-
-
-
-
-
-
-
-
-
-
-
 
 
