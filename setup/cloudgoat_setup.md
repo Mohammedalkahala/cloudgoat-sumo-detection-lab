@@ -1,13 +1,13 @@
 ### ✅ `setup/cloudgoat_setup.md`
 
-````md
+
 # ☁️ CloudGoat Setup Guide
 
 This guide covers the exact steps used to deploy **CloudGoat scenarios** (`iam_privesc_by_attachment`, `rce_web_app`) and connect them to **Sumo Logic** for detection analysis.
 
 > ✅ This was tested in a constrained AWS environment (e.g. AWS CloudShell) with limited space.
 
----
+
 
 ## 📦 Prerequisites
 
@@ -16,7 +16,7 @@ This guide covers the exact steps used to deploy **CloudGoat scenarios** (`iam_p
 - Sumo Logic set up with AWS CloudTrail ingest (optional)
 - [Terraform](https://developer.hashicorp.com/terraform/downloads) installed
 
----
+
 
 ## 🔧 Step-by-Step Setup
 
