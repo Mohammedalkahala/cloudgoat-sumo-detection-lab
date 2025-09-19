@@ -128,9 +128,3 @@ You should start seeing CloudTrail logs — including IAM activity, EC2 launches
 | IAM Role for Sumo        | Grants Sumo access to the bucket |
 | Add Source in Sumo Logic | Connect Sumo to AWS CloudTrail   |
 | Query Events             | View logs in Sumo’s Search       |
-
-
-
-Would you like me to generate and stage this file for GitHub too?
-```
-
