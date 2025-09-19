@@ -98,7 +98,6 @@ sudo chown -R $(whoami):$(whoami) /aws/mde/cloudgoat-lab/.terraform-plugin-cache
 
 ```bash
 cd "$WORKDIR"
-rm -rf .terraform
 terraform init
 ```
 
