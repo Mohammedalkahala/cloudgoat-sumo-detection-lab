@@ -45,7 +45,6 @@ Here are the detections and artifacts included in this lab:
 
 - Metadata Access / Instance Role Usage  
 - Describe Instance Attribute (userData / metadata attributes)  
-- (Optional/if present) Instance launches with IAM roles
 
 ---
 
