@@ -56,7 +56,3 @@ cloudgoat-sumo-detection-lab/
 ├── .gitignore
 ├── README.md
 └── START\_HERE.md
-
-
-
-
