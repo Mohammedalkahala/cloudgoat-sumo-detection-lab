@@ -59,19 +59,13 @@ Here are the detections and artifacts included in this lab:
 
 ### 📁 Files in This Project
 
-```
-
 rce\_web\_app/
 ├── attacks/
 ├── dashboards/
-│   └── rce-web-app-dashboard.json
 ├── detections/
 ├── findings/
 ├── logs/
-│   └── relevant CloudTrail JSON logs
 ├── queries/
-│   └── detection‑queries.txt
 ├── screenshots/
-│   └── dashboard evidence images
 └── README.md
 
