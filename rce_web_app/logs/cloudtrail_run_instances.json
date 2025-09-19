@@ -1,0 +1,57 @@
+{
+  "eventVersion": "1.10",
+  "userIdentity": {
+    "type": "IAMUser",
+    "principalId": "AIDAU55B56T7GPFYKSTMC",
+    "arn": "arn:aws:iam::339105150206:user/admin",
+    "accountId": "339105150206",
+    "accessKeyId": "ASIAU55B56T7L4BOOZQL",
+    "userName": "admin",
+    "sessionContext": {
+      "attributes": {
+        "creationDate": "2025-09-17T19:19:19Z",
+        "mfaAuthenticated": "true"
+      }
+    }
+  },
+  "eventTime": "2025-09-17T21:57:31Z",
+  "eventSource": "ec2.amazonaws.com",
+  "eventName": "RunInstances",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "3.134.244.221",
+  "userAgent": "Terraform",
+  "requestParameters": {
+    "userData": "<sensitiveDataRemoved>",
+    "iamInstanceProfile": {
+      "name": "cg-ec2-instance-profile-cglab4"
+    },
+    "tagSpecificationSet": {
+      "items": [
+        {
+          "resourceType": "instance",
+          "tags": [
+            {
+              "key": "Scenario",
+              "value": "rce-web-app"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "responseElements": {
+    "instancesSet": {
+      "items": [
+        {
+          "instanceId": "i-00c24abd77fccf938"
+        }
+      ]
+    }
+  },
+  "eventID": "21c64272-a442-4933-bfea-02875fd94ac8",
+  "readOnly": false,
+  "eventType": "AwsApiCall",
+  "managementEvent": true,
+  "recipientAccountId": "339105150206",
+  "eventCategory": "Management"
+}
