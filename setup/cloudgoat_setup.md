@@ -1,5 +1,3 @@
-Perfect — here’s your **step-by-step CloudGoat Setup Guide** based entirely on the commands and troubleshooting you actually did. This version is clear, accurate, and designed to help anyone follow the exact setup — even in tricky AWS environments like CloudShell.
-
 ---
 
 ### ✅ `setup/cloudgoat_setup.md`
