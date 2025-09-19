@@ -20,9 +20,9 @@ This repo contains two hands‑on labs:
 ## Repo Layout
 
 cloudgoat‑sumo‑detection‑lab/
-├ iam_privesc_by_attachment/
-├ rce_web_app/
-├ .gitignore
-├ README.md
-└ START_HERE.md
+- iam_privesc_by_attachment/
+- rce_web_app/
+- .gitignore
+- README.md
+- START_HERE.md
 
